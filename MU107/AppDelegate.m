@@ -15,8 +15,7 @@
 {
     LoginViewController* controllet = [[LoginViewController alloc] init];
     [controllet publicMethod];
-    
-    //[controllet performSelector:@selector(privateMethod) withObject:nil afterDelay:0.0f];
+
     return YES;
 }
 							
