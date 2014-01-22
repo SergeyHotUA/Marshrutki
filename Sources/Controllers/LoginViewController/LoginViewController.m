@@ -11,14 +11,17 @@
 
 @interface LoginViewController ()
 
-- (void) privateMethod;
-
 @property (weak, nonatomic) IBOutlet UITextField *txtLogin;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+
+- (IBAction) textFieldEditingDone:(id)sender;
 
 @end
 
 @implementation LoginViewController
+
+#pragma mark -
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -32,15 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) privateMethod
-{
-    NSLog(@"privateMethod");
-}
-
--(void) publicMethod
-{
-    NSLog(@"publicMethod");
-}
+#pragma mark -
+#pragma mark - IBAction methods
 
 - (IBAction)actionLogin:(UIButton *)sender
 {
@@ -48,6 +44,12 @@
     
     User* user = [User userWithName:self.txtLogin.text andPassword:self.txtPassword.text];
     [user login];
+}
+
+- (IBAction) textFieldEditingDone:(id)sender
+{
+    // по кнопке Done на клавиатуре опускаем ее
+    [sender resignFirstResponder];
 }
 
 @end

@@ -13,9 +13,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LoginViewController* controllet = [[LoginViewController alloc] init];
-    [controllet publicMethod];
-
     return YES;
 }
 							

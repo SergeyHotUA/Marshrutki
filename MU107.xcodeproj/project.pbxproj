@@ -7,25 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8461F285188C16C90090B03C /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461F284188C16C90090B03C /* Route.m */; };
-		8461F288188C17030090B03C /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461F287188C17030090B03C /* Vehicle.m */; };
-		8461F28B188C17600090B03C /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461F28A188C17600090B03C /* Bus.m */; };
+		841F8C19188FBAA3001AE0C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C18188FBAA3001AE0C8 /* AppDelegate.m */; };
+		841F8C21188FBAAA001AE0C8 /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C1C188FBAAA001AE0C8 /* Bus.m */; };
+		841F8C22188FBAAA001AE0C8 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C1E188FBAAA001AE0C8 /* Route.m */; };
+		841F8C23188FBAAA001AE0C8 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C20188FBAAA001AE0C8 /* Vehicle.m */; };
+		841F8C25188FBB53001AE0C8 /* password_recovery.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C24188FBB53001AE0C8 /* password_recovery.png */; };
+		841F8C27188FC7A1001AE0C8 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C26188FC7A1001AE0C8 /* back.png */; };
+		841F8C42188FD4A1001AE0C8 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C32188FD4A1001AE0C8 /* DebugViewController.m */; };
+		841F8C43188FD4A1001AE0C8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C35188FD4A1001AE0C8 /* LoginViewController.m */; };
+		841F8C44188FD4A1001AE0C8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C38188FD4A1001AE0C8 /* MainViewController.m */; };
+		841F8C45188FD4A1001AE0C8 /* MemberRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C3B188FD4A1001AE0C8 /* MemberRegistrationViewController.m */; };
+		841F8C46188FD4A1001AE0C8 /* PasswordRecoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C3E188FD4A1001AE0C8 /* PasswordRecoveryViewController.m */; };
+		841F8C50188FE0BF001AE0C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */; };
+		841F8C55188FF50A001AE0C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F8C54188FF50A001AE0C8 /* QuartzCore.framework */; };
+		841F8C5918900C33001AE0C8 /* second logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C5818900C33001AE0C8 /* second logo.jpg */; };
+		8444001F188EB264008A465D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84440008188EB264008A465D /* Main_iPad.storyboard */; };
+		84440020188EB264008A465D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444000A188EB264008A465D /* Main_iPhone.storyboard */; };
+		84440023188EB264008A465D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84440011188EB264008A465D /* Images.xcassets */; };
+		84440025188EB264008A465D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84440014188EB264008A465D /* main.m */; };
+		84440026188EB264008A465D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84440017188EB264008A465D /* User.m */; };
+		8444002C188EB317008A465D /* marshrutka_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8444002B188EB317008A465D /* marshrutka_logo.jpg */; };
+		84440033188EB431008A465D /* user_info_top_round_bottom_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 8444002F188EB431008A465D /* user_info_top_round_bottom_square.png */; };
+		84440034188EB431008A465D /* user_info_top_square_bottom_round.png in Resources */ = {isa = PBXBuildFile; fileRef = 84440030188EB431008A465D /* user_info_top_square_bottom_round.png */; };
+		84440037188EBCAA008A465D /* user_info_top_round_bottom_square2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84440035188EBCAA008A465D /* user_info_top_round_bottom_square2.png */; };
+		84440038188EBCAA008A465D /* user_info_top_square_bottom_round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84440036188EBCAA008A465D /* user_info_top_square_bottom_round2.png */; };
+		8444006E188F25B0008A465D /* loginBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8444006B188F25B0008A465D /* loginBtn.png */; };
+		8444006F188F25B0008A465D /* newBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8444006C188F25B0008A465D /* newBtn.png */; };
+		84440070188F25B0008A465D /* sendBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8444006D188F25B0008A465D /* sendBtn.png */; };
 		848028E5188AFF5200C99865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E4188AFF5200C99865 /* Foundation.framework */; };
 		848028E7188AFF5200C99865 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E6188AFF5200C99865 /* CoreGraphics.framework */; };
 		848028E9188AFF5200C99865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E8188AFF5200C99865 /* UIKit.framework */; };
-		848028EF188AFF5200C99865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848028ED188AFF5200C99865 /* InfoPlist.strings */; };
-		848028F1188AFF5200C99865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848028F0188AFF5200C99865 /* main.m */; };
-		848028F5188AFF5200C99865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848028F4188AFF5200C99865 /* AppDelegate.m */; };
-		848028F8188AFF5200C99865 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848028F6188AFF5200C99865 /* Main_iPhone.storyboard */; };
-		848028FB188AFF5200C99865 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848028F9188AFF5200C99865 /* Main_iPad.storyboard */; };
-		848028FE188AFF5200C99865 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848028FD188AFF5200C99865 /* LoginViewController.m */; };
-		84802900188AFF5200C99865 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848028FF188AFF5200C99865 /* Images.xcassets */; };
 		84802907188AFF5200C99865 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84802906188AFF5200C99865 /* XCTest.framework */; };
 		84802908188AFF5200C99865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E4188AFF5200C99865 /* Foundation.framework */; };
 		84802909188AFF5200C99865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E8188AFF5200C99865 /* UIKit.framework */; };
-		84802911188AFF5200C99865 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8480290F188AFF5200C99865 /* InfoPlist.strings */; };
-		84802913188AFF5200C99865 /* MU107Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84802912188AFF5200C99865 /* MU107Tests.m */; };
-		8480291F188B01F700C99865 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480291E188B01F700C99865 /* User.m */; };
+		97AB754AD7DE4EC3B5E4E138 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A08816827214E17B3BD521A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,34 +54,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8461F283188C16C90090B03C /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
-		8461F284188C16C90090B03C /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
-		8461F286188C17030090B03C /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
-		8461F287188C17030090B03C /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
-		8461F289188C17600090B03C /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
-		8461F28A188C17600090B03C /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
+		2A08816827214E17B3BD521A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BB11BE690E4AAB8F845068 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		841F8C17188FBAA3001AE0C8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		841F8C18188FBAA3001AE0C8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		841F8C1B188FBAAA001AE0C8 /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
+		841F8C1C188FBAAA001AE0C8 /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
+		841F8C1D188FBAAA001AE0C8 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		841F8C1E188FBAAA001AE0C8 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		841F8C1F188FBAAA001AE0C8 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		841F8C20188FBAAA001AE0C8 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		841F8C24188FBB53001AE0C8 /* password_recovery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_recovery.png; sourceTree = "<group>"; };
+		841F8C26188FC7A1001AE0C8 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		841F8C31188FD4A1001AE0C8 /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
+		841F8C32188FD4A1001AE0C8 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
+		841F8C34188FD4A1001AE0C8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		841F8C35188FD4A1001AE0C8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		841F8C37188FD4A1001AE0C8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		841F8C38188FD4A1001AE0C8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		841F8C3A188FD4A1001AE0C8 /* MemberRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberRegistrationViewController.h; sourceTree = "<group>"; };
+		841F8C3B188FD4A1001AE0C8 /* MemberRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberRegistrationViewController.m; sourceTree = "<group>"; };
+		841F8C3D188FD4A1001AE0C8 /* PasswordRecoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordRecoveryViewController.h; sourceTree = "<group>"; };
+		841F8C3E188FD4A1001AE0C8 /* PasswordRecoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordRecoveryViewController.m; sourceTree = "<group>"; };
+		841F8C4E188FE0BF001AE0C8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		841F8C54188FF50A001AE0C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		841F8C5818900C33001AE0C8 /* second logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "second logo.jpg"; sourceTree = "<group>"; };
+		84440009188EB264008A465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		8444000B188EB264008A465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		84440011188EB264008A465D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84440014188EB264008A465D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84440016188EB264008A465D /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		84440017188EB264008A465D /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8444002B188EB317008A465D /* marshrutka_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marshrutka_logo.jpg; sourceTree = "<group>"; };
+		8444002F188EB431008A465D /* user_info_top_round_bottom_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_info_top_round_bottom_square.png; sourceTree = "<group>"; };
+		84440030188EB431008A465D /* user_info_top_square_bottom_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_info_top_square_bottom_round.png; sourceTree = "<group>"; };
+		84440035188EBCAA008A465D /* user_info_top_round_bottom_square2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_info_top_round_bottom_square2.png; sourceTree = "<group>"; };
+		84440036188EBCAA008A465D /* user_info_top_square_bottom_round2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_info_top_square_bottom_round2.png; sourceTree = "<group>"; };
+		84440040188EC3DB008A465D /* MU107-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MU107-Prefix.pch"; sourceTree = "<group>"; };
+		84440047188EC437008A465D /* MU107-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MU107-Info.plist"; sourceTree = "<group>"; };
+		8444006B188F25B0008A465D /* loginBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBtn.png; sourceTree = "<group>"; };
+		8444006C188F25B0008A465D /* newBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newBtn.png; sourceTree = "<group>"; };
+		8444006D188F25B0008A465D /* sendBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendBtn.png; sourceTree = "<group>"; };
 		848028E1188AFF5200C99865 /* MU107.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MU107.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848028E4188AFF5200C99865 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		848028E6188AFF5200C99865 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		848028E8188AFF5200C99865 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		848028EC188AFF5200C99865 /* MU107-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MU107-Info.plist"; sourceTree = "<group>"; };
-		848028EE188AFF5200C99865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		848028F0188AFF5200C99865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		848028F2188AFF5200C99865 /* MU107-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MU107-Prefix.pch"; sourceTree = "<group>"; };
-		848028F3188AFF5200C99865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		848028F4188AFF5200C99865 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		848028F7188AFF5200C99865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		848028FA188AFF5200C99865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		848028FC188AFF5200C99865 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		848028FD188AFF5200C99865 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		848028FF188AFF5200C99865 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84802905188AFF5200C99865 /* MU107Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MU107Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84802906188AFF5200C99865 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8480290E188AFF5200C99865 /* MU107Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MU107Tests-Info.plist"; sourceTree = "<group>"; };
-		84802910188AFF5200C99865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84802912188AFF5200C99865 /* MU107Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MU107Tests.m; sourceTree = "<group>"; };
-		8480291D188B01F700C99865 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
-		8480291E188B01F700C99865 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +109,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841F8C55188FF50A001AE0C8 /* QuartzCore.framework in Frameworks */,
 				848028E7188AFF5200C99865 /* CoreGraphics.framework in Frameworks */,
 				848028E9188AFF5200C99865 /* UIKit.framework in Frameworks */,
 				848028E5188AFF5200C99865 /* Foundation.framework in Frameworks */,
+				97AB754AD7DE4EC3B5E4E138 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,13 +130,187 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841F8C16188FBAA3001AE0C8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C17188FBAA3001AE0C8 /* AppDelegate.h */,
+				841F8C18188FBAA3001AE0C8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		841F8C1A188FBAAA001AE0C8 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C1B188FBAAA001AE0C8 /* Bus.h */,
+				841F8C1C188FBAAA001AE0C8 /* Bus.m */,
+				841F8C1D188FBAAA001AE0C8 /* Route.h */,
+				841F8C1E188FBAAA001AE0C8 /* Route.m */,
+				841F8C1F188FBAAA001AE0C8 /* Vehicle.h */,
+				841F8C20188FBAAA001AE0C8 /* Vehicle.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		841F8C2F188FD4A1001AE0C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C30188FD4A1001AE0C8 /* DebugViewController */,
+				841F8C4D188FE0BF001AE0C8 /* BaseViewController */,
+				841F8C33188FD4A1001AE0C8 /* LoginViewController */,
+				841F8C36188FD4A1001AE0C8 /* MainViewController */,
+				841F8C39188FD4A1001AE0C8 /* MemberRegistrationViewController */,
+				841F8C3C188FD4A1001AE0C8 /* PasswordRecoveryViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		841F8C30188FD4A1001AE0C8 /* DebugViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C31188FD4A1001AE0C8 /* DebugViewController.h */,
+				841F8C32188FD4A1001AE0C8 /* DebugViewController.m */,
+			);
+			path = DebugViewController;
+			sourceTree = "<group>";
+		};
+		841F8C33188FD4A1001AE0C8 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C34188FD4A1001AE0C8 /* LoginViewController.h */,
+				841F8C35188FD4A1001AE0C8 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		841F8C36188FD4A1001AE0C8 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C37188FD4A1001AE0C8 /* MainViewController.h */,
+				841F8C38188FD4A1001AE0C8 /* MainViewController.m */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		841F8C39188FD4A1001AE0C8 /* MemberRegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C3A188FD4A1001AE0C8 /* MemberRegistrationViewController.h */,
+				841F8C3B188FD4A1001AE0C8 /* MemberRegistrationViewController.m */,
+			);
+			path = MemberRegistrationViewController;
+			sourceTree = "<group>";
+		};
+		841F8C3C188FD4A1001AE0C8 /* PasswordRecoveryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C3D188FD4A1001AE0C8 /* PasswordRecoveryViewController.h */,
+				841F8C3E188FD4A1001AE0C8 /* PasswordRecoveryViewController.m */,
+			);
+			path = PasswordRecoveryViewController;
+			sourceTree = "<group>";
+		};
+		841F8C4D188FE0BF001AE0C8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C4E188FE0BF001AE0C8 /* BaseViewController.h */,
+				841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		841F8C51188FF1C1001AE0C8 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C5818900C33001AE0C8 /* second logo.jpg */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		84440004188EB264008A465D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C51188FF1C1001AE0C8 /* main */,
+				84440051188ED617008A465D /* registration */,
+				8444002A188EB2C2008A465D /* Login */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84440005188EB264008A465D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C16188FBAA3001AE0C8 /* AppDelegate */,
+				841F8C2F188FD4A1001AE0C8 /* Controllers */,
+				84440015188EB264008A465D /* Model */,
+				841F8C1A188FBAAA001AE0C8 /* Objects */,
+				84440049188EC476008A465D /* main storyboard */,
+				8444003F188EC3A4008A465D /* other */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		84440015188EB264008A465D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84440016188EB264008A465D /* User.h */,
+				84440017188EB264008A465D /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8444002A188EB2C2008A465D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8444002B188EB317008A465D /* marshrutka_logo.jpg */,
+				8444006B188F25B0008A465D /* loginBtn.png */,
+				8444006C188F25B0008A465D /* newBtn.png */,
+				8444006D188F25B0008A465D /* sendBtn.png */,
+				8444002F188EB431008A465D /* user_info_top_round_bottom_square.png */,
+				84440030188EB431008A465D /* user_info_top_square_bottom_round.png */,
+				84440035188EBCAA008A465D /* user_info_top_round_bottom_square2.png */,
+				84440036188EBCAA008A465D /* user_info_top_square_bottom_round2.png */,
+				841F8C24188FBB53001AE0C8 /* password_recovery.png */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8444003F188EC3A4008A465D /* other */ = {
+			isa = PBXGroup;
+			children = (
+				84440008188EB264008A465D /* Main_iPad.storyboard */,
+				84440011188EB264008A465D /* Images.xcassets */,
+				84440040188EC3DB008A465D /* MU107-Prefix.pch */,
+				84440047188EC437008A465D /* MU107-Info.plist */,
+				84440014188EB264008A465D /* main.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		84440049188EC476008A465D /* main storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8444000A188EB264008A465D /* Main_iPhone.storyboard */,
+			);
+			name = "main storyboard";
+			sourceTree = "<group>";
+		};
+		84440051188ED617008A465D /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				841F8C26188FC7A1001AE0C8 /* back.png */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
 		848028D8188AFF5200C99865 = {
 			isa = PBXGroup;
 			children = (
-				848028EA188AFF5200C99865 /* MU107 */,
-				8480290C188AFF5200C99865 /* MU107Tests */,
+				84440005188EB264008A465D /* Sources */,
+				84440004188EB264008A465D /* Resources */,
 				848028E3188AFF5200C99865 /* Frameworks */,
 				848028E2188AFF5200C99865 /* Products */,
+				77BB11BE690E4AAB8F845068 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,72 +326,14 @@
 		848028E3188AFF5200C99865 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				841F8C54188FF50A001AE0C8 /* QuartzCore.framework */,
 				848028E4188AFF5200C99865 /* Foundation.framework */,
 				848028E6188AFF5200C99865 /* CoreGraphics.framework */,
 				848028E8188AFF5200C99865 /* UIKit.framework */,
 				84802906188AFF5200C99865 /* XCTest.framework */,
+				2A08816827214E17B3BD521A /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		848028EA188AFF5200C99865 /* MU107 */ = {
-			isa = PBXGroup;
-			children = (
-				8480291C188B017200C99865 /* Model */,
-				848028F3188AFF5200C99865 /* AppDelegate.h */,
-				848028F4188AFF5200C99865 /* AppDelegate.m */,
-				848028FC188AFF5200C99865 /* LoginViewController.h */,
-				848028FD188AFF5200C99865 /* LoginViewController.m */,
-				8461F283188C16C90090B03C /* Route.h */,
-				8461F284188C16C90090B03C /* Route.m */,
-				8461F286188C17030090B03C /* Vehicle.h */,
-				8461F287188C17030090B03C /* Vehicle.m */,
-				8461F289188C17600090B03C /* Bus.h */,
-				8461F28A188C17600090B03C /* Bus.m */,
-				848028FF188AFF5200C99865 /* Images.xcassets */,
-				848028EB188AFF5200C99865 /* Supporting Files */,
-			);
-			path = MU107;
-			sourceTree = "<group>";
-		};
-		848028EB188AFF5200C99865 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				848028F6188AFF5200C99865 /* Main_iPhone.storyboard */,
-				848028F9188AFF5200C99865 /* Main_iPad.storyboard */,
-				848028EC188AFF5200C99865 /* MU107-Info.plist */,
-				848028ED188AFF5200C99865 /* InfoPlist.strings */,
-				848028F0188AFF5200C99865 /* main.m */,
-				848028F2188AFF5200C99865 /* MU107-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8480290C188AFF5200C99865 /* MU107Tests */ = {
-			isa = PBXGroup;
-			children = (
-				84802912188AFF5200C99865 /* MU107Tests.m */,
-				8480290D188AFF5200C99865 /* Supporting Files */,
-			);
-			path = MU107Tests;
-			sourceTree = "<group>";
-		};
-		8480290D188AFF5200C99865 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8480290E188AFF5200C99865 /* MU107Tests-Info.plist */,
-				8480290F188AFF5200C99865 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8480291C188B017200C99865 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8480291D188B01F700C99865 /* User.h */,
-				8480291E188B01F700C99865 /* User.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84802916188AFF5200C99865 /* Build configuration list for PBXNativeTarget "MU107" */;
 			buildPhases = (
+				7D905B346501416C89697D6E /* Check Pods Manifest.lock */,
 				848028DD188AFF5200C99865 /* Sources */,
 				848028DE188AFF5200C99865 /* Frameworks */,
 				848028DF188AFF5200C99865 /* Resources */,
+				0EEEC0A6C38746BD890E94F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,10 +414,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848028FB188AFF5200C99865 /* Main_iPad.storyboard in Resources */,
-				84802900188AFF5200C99865 /* Images.xcassets in Resources */,
-				848028F8188AFF5200C99865 /* Main_iPhone.storyboard in Resources */,
-				848028EF188AFF5200C99865 /* InfoPlist.strings in Resources */,
+				8444002C188EB317008A465D /* marshrutka_logo.jpg in Resources */,
+				84440034188EB431008A465D /* user_info_top_square_bottom_round.png in Resources */,
+				84440070188F25B0008A465D /* sendBtn.png in Resources */,
+				841F8C25188FBB53001AE0C8 /* password_recovery.png in Resources */,
+				84440038188EBCAA008A465D /* user_info_top_square_bottom_round2.png in Resources */,
+				8444006E188F25B0008A465D /* loginBtn.png in Resources */,
+				841F8C27188FC7A1001AE0C8 /* back.png in Resources */,
+				84440020188EB264008A465D /* Main_iPhone.storyboard in Resources */,
+				84440023188EB264008A465D /* Images.xcassets in Resources */,
+				84440037188EBCAA008A465D /* user_info_top_round_bottom_square2.png in Resources */,
+				8444006F188F25B0008A465D /* newBtn.png in Resources */,
+				84440033188EB431008A465D /* user_info_top_round_bottom_square.png in Resources */,
+				8444001F188EB264008A465D /* Main_iPad.storyboard in Resources */,
+				841F8C5918900C33001AE0C8 /* second logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,24 +435,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84802911188AFF5200C99865 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EEEC0A6C38746BD890E94F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D905B346501416C89697D6E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		848028DD188AFF5200C99865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8461F285188C16C90090B03C /* Route.m in Sources */,
-				8480291F188B01F700C99865 /* User.m in Sources */,
-				8461F288188C17030090B03C /* Vehicle.m in Sources */,
-				848028FE188AFF5200C99865 /* LoginViewController.m in Sources */,
-				848028F5188AFF5200C99865 /* AppDelegate.m in Sources */,
-				8461F28B188C17600090B03C /* Bus.m in Sources */,
-				848028F1188AFF5200C99865 /* main.m in Sources */,
+				841F8C43188FD4A1001AE0C8 /* LoginViewController.m in Sources */,
+				841F8C50188FE0BF001AE0C8 /* BaseViewController.m in Sources */,
+				841F8C45188FD4A1001AE0C8 /* MemberRegistrationViewController.m in Sources */,
+				84440026188EB264008A465D /* User.m in Sources */,
+				841F8C46188FD4A1001AE0C8 /* PasswordRecoveryViewController.m in Sources */,
+				841F8C21188FBAAA001AE0C8 /* Bus.m in Sources */,
+				841F8C42188FD4A1001AE0C8 /* DebugViewController.m in Sources */,
+				841F8C44188FD4A1001AE0C8 /* MainViewController.m in Sources */,
+				841F8C22188FBAAA001AE0C8 /* Route.m in Sources */,
+				841F8C23188FBAAA001AE0C8 /* Vehicle.m in Sources */,
+				84440025188EB264008A465D /* main.m in Sources */,
+				841F8C19188FBAA3001AE0C8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84802913188AFF5200C99865 /* MU107Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,36 +511,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		848028ED188AFF5200C99865 /* InfoPlist.strings */ = {
+		84440008188EB264008A465D /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				848028EE188AFF5200C99865 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		848028F6188AFF5200C99865 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				848028F7188AFF5200C99865 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		848028F9188AFF5200C99865 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				848028FA188AFF5200C99865 /* Base */,
+				84440009188EB264008A465D /* Base */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		8480290F188AFF5200C99865 /* InfoPlist.strings */ = {
+		8444000A188EB264008A465D /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84802910188AFF5200C99865 /* en */,
+				8444000B188EB264008A465D /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -421,13 +606,14 @@
 		};
 		84802917188AFF5200C99865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BB11BE690E4AAB8F845068 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MU107/MU107-Prefix.pch";
-				INFOPLIST_FILE = "MU107/MU107-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Sources/MU107-Prefix.pch";
+				INFOPLIST_FILE = "Sources/MU107-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,13 +621,14 @@
 		};
 		84802918188AFF5200C99865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BB11BE690E4AAB8F845068 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MU107/MU107-Prefix.pch";
-				INFOPLIST_FILE = "MU107/MU107-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Sources/MU107-Prefix.pch";
+				INFOPLIST_FILE = "Sources/MU107-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

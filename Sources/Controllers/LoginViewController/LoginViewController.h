@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DebugViewController.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : DebugViewController
 
 - (IBAction)actionLogin:(UIButton *)sender;
-- (void) publicMethod;
 
 @end
