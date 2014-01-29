@@ -13,6 +13,5 @@
 
 - (BOOL)validateEmail:(NSString*)emailStr;
 - (void)alertMessageWithTitle:(NSString*) title message:(NSString*) message;
-- (void)backBtnAction;
 
 @end

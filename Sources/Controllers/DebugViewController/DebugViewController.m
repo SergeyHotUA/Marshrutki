@@ -17,6 +17,11 @@
 #pragma mark -
 #pragma mark - View Lifecycle
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"%@ call %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     NSLog(@"%@ call %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));

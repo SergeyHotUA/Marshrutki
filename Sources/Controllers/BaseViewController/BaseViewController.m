@@ -19,20 +19,18 @@
 #pragma mark -
 #pragma mark - View Lifecycle
 
-- (void) viewDidLoad
-{
+- (void) viewDidLoad {
     [super viewDidLoad];
     
     // set left button
     UIButton* leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
-    [leftButton addTarget:self action:@selector(backBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [leftButton addTarget:self action:@selector(backBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [leftButton setFrame:CGRectMake(0.0f, 0.0f, 22.0f, 25.0f)];
     [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:leftButton]];
     
-    // set navigation bar
     [self.navigationController.navigationBar setBarTintColor:NVIGATION_TAB_COLOR];
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 #pragma mark -
@@ -55,9 +53,9 @@
     return [emailTest evaluateWithObject:emailStr];
 }
 
-- (void) backBtnAction
+- (void) backBtnAction:(UIButton*) sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -21,19 +21,9 @@
 #pragma mark -
 #pragma mark - View Lifecycle
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // set title
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:20.0f]};
     CGRect frame = CGRectMake(0.0f, 0.0f, [self.title sizeWithAttributes:attributes].width, 44.0f);
@@ -45,25 +35,27 @@
     [self.navigationItem setTitleView:label];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark -
 #pragma mark - View Lifecycle
 
-- (IBAction)sendBtn:(id)sender
-{
+- (IBAction)sendBtn:(id)sender {
     NSString* email = self.txtEmail.text;
     if  (([email length] > 0) &&
-        ([self validateEmail:email]))
-    {
+        ([self validateEmail:email])) {
         [self alertMessageWithTitle:@"Thank you!" message:@"Letter already sent."];
     }
-    else
-    {
+    else {
         [self alertMessageWithTitle:@"Error" message:@"Please enter your email address correctly."];
     }
 }

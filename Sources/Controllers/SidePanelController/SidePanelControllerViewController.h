@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
+#import "JASidePanelController.h"
 
-@interface MainViewController : BaseViewController <UIGestureRecognizerDelegate>
+@interface SidePanelControllerViewController : JASidePanelController <UIGestureRecognizerDelegate>
 
 @end

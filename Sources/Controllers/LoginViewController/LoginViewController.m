@@ -23,31 +23,31 @@
 #pragma mark -
 #pragma mark - View Lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark -
 #pragma mark - IBAction methods
 
-- (IBAction)actionLogin:(UIButton *)sender
-{
-    NSLog(@"actionLogin:");
-    
+- (IBAction)actionLogin:(UIButton *)sender {
     User* user = [User userWithName:self.txtLogin.text andPassword:self.txtPassword.text];
     [user login];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction) textFieldEditingDone:(id)sender
-{
+- (IBAction)textFieldEditingDone:(id)sender {
     // по кнопке Done на клавиатуре опускаем ее
     [sender resignFirstResponder];
 }

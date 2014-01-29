@@ -15,12 +15,12 @@
 		841F8C27188FC7A1001AE0C8 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C26188FC7A1001AE0C8 /* back.png */; };
 		841F8C42188FD4A1001AE0C8 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C32188FD4A1001AE0C8 /* DebugViewController.m */; };
 		841F8C43188FD4A1001AE0C8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C35188FD4A1001AE0C8 /* LoginViewController.m */; };
-		841F8C44188FD4A1001AE0C8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C38188FD4A1001AE0C8 /* MainViewController.m */; };
 		841F8C45188FD4A1001AE0C8 /* MemberRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C3B188FD4A1001AE0C8 /* MemberRegistrationViewController.m */; };
 		841F8C46188FD4A1001AE0C8 /* PasswordRecoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C3E188FD4A1001AE0C8 /* PasswordRecoveryViewController.m */; };
 		841F8C50188FE0BF001AE0C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */; };
 		841F8C55188FF50A001AE0C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F8C54188FF50A001AE0C8 /* QuartzCore.framework */; };
 		841F8C5918900C33001AE0C8 /* second logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C5818900C33001AE0C8 /* second logo.jpg */; };
+		843BA727189905830083598B /* SidePanelControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BA726189905830083598B /* SidePanelControllerViewController.m */; };
 		8444001F188EB264008A465D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84440008188EB264008A465D /* Main_iPad.storyboard */; };
 		84440020188EB264008A465D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444000A188EB264008A465D /* Main_iPhone.storyboard */; };
 		84440023188EB264008A465D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84440011188EB264008A465D /* Images.xcassets */; };
@@ -40,6 +40,8 @@
 		84802907188AFF5200C99865 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84802906188AFF5200C99865 /* XCTest.framework */; };
 		84802908188AFF5200C99865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E4188AFF5200C99865 /* Foundation.framework */; };
 		84802909188AFF5200C99865 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848028E8188AFF5200C99865 /* UIKit.framework */; };
+		84BE433C189907350015F722 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE433B189907350015F722 /* MapViewController.m */; };
+		84BE43401899087D0015F722 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE433F1899087D0015F722 /* RoutesViewController.m */; };
 		97AB754AD7DE4EC3B5E4E138 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A08816827214E17B3BD521A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +62,8 @@
 		841F8C18188FBAA3001AE0C8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		841F8C1B188FBAAA001AE0C8 /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
 		841F8C1C188FBAAA001AE0C8 /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
-		841F8C1D188FBAAA001AE0C8 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
-		841F8C1E188FBAAA001AE0C8 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		841F8C1D188FBAAA001AE0C8 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = ../Objects/Route.h; sourceTree = "<group>"; };
+		841F8C1E188FBAAA001AE0C8 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = ../Objects/Route.m; sourceTree = "<group>"; };
 		841F8C1F188FBAAA001AE0C8 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		841F8C20188FBAAA001AE0C8 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		841F8C24188FBB53001AE0C8 /* password_recovery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_recovery.png; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		841F8C32188FD4A1001AE0C8 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
 		841F8C34188FD4A1001AE0C8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		841F8C35188FD4A1001AE0C8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		841F8C37188FD4A1001AE0C8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		841F8C38188FD4A1001AE0C8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		841F8C3A188FD4A1001AE0C8 /* MemberRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberRegistrationViewController.h; sourceTree = "<group>"; };
 		841F8C3B188FD4A1001AE0C8 /* MemberRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberRegistrationViewController.m; sourceTree = "<group>"; };
 		841F8C3D188FD4A1001AE0C8 /* PasswordRecoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordRecoveryViewController.h; sourceTree = "<group>"; };
@@ -80,6 +80,8 @@
 		841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		841F8C54188FF50A001AE0C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		841F8C5818900C33001AE0C8 /* second logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "second logo.jpg"; sourceTree = "<group>"; };
+		843BA725189905830083598B /* SidePanelControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidePanelControllerViewController.h; sourceTree = "<group>"; };
+		843BA726189905830083598B /* SidePanelControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelControllerViewController.m; sourceTree = "<group>"; };
 		84440009188EB264008A465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		8444000B188EB264008A465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		84440011188EB264008A465D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,10 @@
 		848028E8188AFF5200C99865 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84802905188AFF5200C99865 /* MU107Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MU107Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84802906188AFF5200C99865 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84BE433A189907350015F722 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		84BE433B189907350015F722 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		84BE433E1899087D0015F722 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		84BE433F1899087D0015F722 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +150,6 @@
 			children = (
 				841F8C1B188FBAAA001AE0C8 /* Bus.h */,
 				841F8C1C188FBAAA001AE0C8 /* Bus.m */,
-				841F8C1D188FBAAA001AE0C8 /* Route.h */,
-				841F8C1E188FBAAA001AE0C8 /* Route.m */,
 				841F8C1F188FBAAA001AE0C8 /* Vehicle.h */,
 				841F8C20188FBAAA001AE0C8 /* Vehicle.m */,
 			);
@@ -155,10 +159,10 @@
 		841F8C2F188FD4A1001AE0C8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				843BA724189905630083598B /* SidePanelController */,
 				841F8C30188FD4A1001AE0C8 /* DebugViewController */,
 				841F8C4D188FE0BF001AE0C8 /* BaseViewController */,
 				841F8C33188FD4A1001AE0C8 /* LoginViewController */,
-				841F8C36188FD4A1001AE0C8 /* MainViewController */,
 				841F8C39188FD4A1001AE0C8 /* MemberRegistrationViewController */,
 				841F8C3C188FD4A1001AE0C8 /* PasswordRecoveryViewController */,
 			);
@@ -181,15 +185,6 @@
 				841F8C35188FD4A1001AE0C8 /* LoginViewController.m */,
 			);
 			path = LoginViewController;
-			sourceTree = "<group>";
-		};
-		841F8C36188FD4A1001AE0C8 /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				841F8C37188FD4A1001AE0C8 /* MainViewController.h */,
-				841F8C38188FD4A1001AE0C8 /* MainViewController.m */,
-			);
-			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		841F8C39188FD4A1001AE0C8 /* MemberRegistrationViewController */ = {
@@ -227,6 +222,17 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		843BA724189905630083598B /* SidePanelController */ = {
+			isa = PBXGroup;
+			children = (
+				843BA725189905830083598B /* SidePanelControllerViewController.h */,
+				843BA726189905830083598B /* SidePanelControllerViewController.m */,
+				84BE433D189908730015F722 /* RoutesViewController */,
+				84BE43391899072B0015F722 /* MapViewController */,
+			);
+			path = SidePanelController;
+			sourceTree = "<group>";
+		};
 		84440004188EB264008A465D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +261,8 @@
 			children = (
 				84440016188EB264008A465D /* User.h */,
 				84440017188EB264008A465D /* User.m */,
+				841F8C1D188FBAAA001AE0C8 /* Route.h */,
+				841F8C1E188FBAAA001AE0C8 /* Route.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +342,24 @@
 				2A08816827214E17B3BD521A /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BE43391899072B0015F722 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84BE433A189907350015F722 /* MapViewController.h */,
+				84BE433B189907350015F722 /* MapViewController.m */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		84BE433D189908730015F722 /* RoutesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84BE433E1899087D0015F722 /* RoutesViewController.h */,
+				84BE433F1899087D0015F722 /* RoutesViewController.m */,
+			);
+			path = RoutesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,8 +510,10 @@
 				84440026188EB264008A465D /* User.m in Sources */,
 				841F8C46188FD4A1001AE0C8 /* PasswordRecoveryViewController.m in Sources */,
 				841F8C21188FBAAA001AE0C8 /* Bus.m in Sources */,
+				843BA727189905830083598B /* SidePanelControllerViewController.m in Sources */,
+				84BE433C189907350015F722 /* MapViewController.m in Sources */,
+				84BE43401899087D0015F722 /* RoutesViewController.m in Sources */,
 				841F8C42188FD4A1001AE0C8 /* DebugViewController.m in Sources */,
-				841F8C44188FD4A1001AE0C8 /* MainViewController.m in Sources */,
 				841F8C22188FBAAA001AE0C8 /* Route.m in Sources */,
 				841F8C23188FBAAA001AE0C8 /* Vehicle.m in Sources */,
 				84440025188EB264008A465D /* main.m in Sources */,

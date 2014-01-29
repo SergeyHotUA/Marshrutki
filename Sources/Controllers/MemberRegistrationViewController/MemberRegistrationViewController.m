@@ -22,17 +22,7 @@
 #pragma mark -
 #pragma mark - View Lifecycle
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // set title
@@ -46,8 +36,13 @@
     [self.navigationItem setTitleView:label];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -55,24 +50,19 @@
 #pragma mark -
 #pragma mark - IBAction methods
 
-- (IBAction)sendBtn:(id)sender
-{
+- (IBAction)sendBtn:(id)sender {
     NSString* newEmail = self.txtNewEmail.text;
     NSString* password = self.txtPassword.text;
     if (([newEmail length] > 0) &&
-        ([password length] > 0))
-    {
-        if ([self validateEmail:newEmail])
-        {
+        ([password length] > 0)) {
+        if ([self validateEmail:newEmail]) {
                 [self alertMessageWithTitle:@"Thank you!" message:@"Letter with confirmation of registration sent to your email."];
         }
-        else
-        {
+        else {
             [self alertMessageWithTitle:@"Error" message:@"Please enter your email address correctly."];
         }
     }
-    else
-    {
+    else {
         [self alertMessageWithTitle:@"Error" message:@"Not all fields are filled."];
     }
 }

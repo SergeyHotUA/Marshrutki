@@ -10,8 +10,7 @@
 
 @implementation User
 
-+(User*) userWithName:(NSString*) name andPassword:(NSString*) password
-{
++(User*) userWithName:(NSString*) name andPassword:(NSString*) password {
     User* user = [[User alloc] init];
     user.username = name;
     user.password = password;
@@ -19,15 +18,11 @@
     return user;
 }
 
-- (void) login
-{
-    NSLog(@"Try to lotin the user!");
-    if (([self.username length] > 0) && ([self.password length] > 0))
-    {
+- (void) login {
+    if (([self.username length] > 0) && ([self.password length] > 0)) {
         NSLog(@"Welcome! %@", self.username);
     }
-    else
-    {
+    else {
         NSLog(@"Please enter your username and password");
     }
 }
