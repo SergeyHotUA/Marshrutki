@@ -11,7 +11,8 @@
 
 @interface MapViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *txtLable;
+@property (strong, nonatomic) UIBarButtonItem* favoriteBatButton;
+@property (strong, nonatomic) Route* currentRout;
 
 @end
 
@@ -21,8 +22,10 @@
 {
     [super viewDidLoad];
     
-	UIViewController* loginController = [self.storyboard instantiateViewControllerWithIdentifier:@"AuthNavigationController"];
-    [self.navigationController presentViewController:loginController animated:NO completion:nil];
+	//UIViewController* loginController = [self.storyboard instantiateViewControllerWithIdentifier:@"AuthNavigationController"];
+    //[self.navigationController presentViewController:loginController animated:NO completion:nil];
+    self.favoriteBatButton = [[UIBarButtonItem alloc] initWithTitle:@"☆" style:UIBarButtonItemStyleBordered target:self action:@selector(favAction)];
+    self.navigationItem.rightBarButtonItem = self.favoriteBatButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,9 +33,17 @@
     [super didReceiveMemoryWarning];
 }
 
--(void)setSelectRoute:(Route*) currentRuote
+- (void) didSelectRout:(Route *)route
 {
-    self.txtLable.text = currentRuote.title;
+    self.currentRout = route;
+    self.title = route.title;
+    self.favoriteBatButton.title = route.isFavorite ? @"★" : @"☆";
+}
+- (void) favAction
+{
+    self.currentRout.isFavorite = !self.currentRout.isFavorite;
+    self.favoriteBatButton.title = self.currentRout.isFavorite ? @"★" : @"☆";
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"favs" object:nil];
 }
 
 @end

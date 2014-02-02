@@ -20,6 +20,7 @@
 		841F8C50188FE0BF001AE0C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */; };
 		841F8C55188FF50A001AE0C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F8C54188FF50A001AE0C8 /* QuartzCore.framework */; };
 		841F8C5918900C33001AE0C8 /* second logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841F8C5818900C33001AE0C8 /* second logo.jpg */; };
+		84389AA7189D28D100062822 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84389AA6189D28D100062822 /* MapKit.framework */; };
 		843BA727189905830083598B /* SidePanelControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BA726189905830083598B /* SidePanelControllerViewController.m */; };
 		8444001F188EB264008A465D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84440008188EB264008A465D /* Main_iPad.storyboard */; };
 		84440020188EB264008A465D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444000A188EB264008A465D /* Main_iPhone.storyboard */; };
@@ -80,6 +81,7 @@
 		841F8C4F188FE0BF001AE0C8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		841F8C54188FF50A001AE0C8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		841F8C5818900C33001AE0C8 /* second logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "second logo.jpg"; sourceTree = "<group>"; };
+		84389AA6189D28D100062822 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		843BA725189905830083598B /* SidePanelControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidePanelControllerViewController.h; sourceTree = "<group>"; };
 		843BA726189905830083598B /* SidePanelControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidePanelControllerViewController.m; sourceTree = "<group>"; };
 		84440009188EB264008A465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84389AA7189D28D100062822 /* MapKit.framework in Frameworks */,
 				841F8C55188FF50A001AE0C8 /* QuartzCore.framework in Frameworks */,
 				848028E7188AFF5200C99865 /* CoreGraphics.framework in Frameworks */,
 				848028E9188AFF5200C99865 /* UIKit.framework in Frameworks */,
@@ -334,6 +337,7 @@
 		848028E3188AFF5200C99865 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84389AA6189D28D100062822 /* MapKit.framework */,
 				841F8C54188FF50A001AE0C8 /* QuartzCore.framework */,
 				848028E4188AFF5200C99865 /* Foundation.framework */,
 				848028E6188AFF5200C99865 /* CoreGraphics.framework */,

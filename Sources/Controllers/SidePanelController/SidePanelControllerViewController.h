@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "JASidePanelController.h"
+#import "RoutesViewController.h"
 
-@interface SidePanelControllerViewController : JASidePanelController <UIGestureRecognizerDelegate>
+@interface SidePanelControllerViewController : JASidePanelController <UIGestureRecognizerDelegate, RountsMenuProtocol>
 
 @end

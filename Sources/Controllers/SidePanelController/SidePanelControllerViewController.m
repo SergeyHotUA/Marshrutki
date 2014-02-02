@@ -42,5 +42,4 @@
     [self setCenterPanel:navigationController];
 }
 
-
 @end

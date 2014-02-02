@@ -15,9 +15,12 @@
 #import "JASidePanelController.h"
 #import "UIViewController+JASidePanel.h"
 
+#define MENU_BACKGROUND_COLOR [UIColor colorWithRed:0.29f green:0.3f blue:0.36f alpha:1.f]
+
 @interface RoutesViewController ()
 
 @property (strong, nonatomic) NSMutableArray* routes;
+@property (strong, nonatomic) NSMutableArray* favoriteRoutes;
 
 @end
 
@@ -49,12 +52,18 @@
         
         NSLog(@"Error: %@", error);
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(favoritesChenget) name:@"favs" object:nil];
+}
+
+- (void) dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -66,19 +75,41 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     Route* route = (Route*)self.routes[indexPath.row];
+    
+    static NSString *CellIdentifier = @"Cell";
+    static NSString *FavCellIdentifier = @"FavCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:route.isFavorite ? FavCellIdentifier : CellIdentifier forIndexPath:indexPath];
+    
     cell.textLabel.text = route.title;
+    cell.detailTextLabel.text = route.price;
     
     return cell;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 320.f, 20.f)];
+    view.backgroundColor = MENU_BACKGROUND_COLOR;
+    return view;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Route* route = (Route*)self.routes[indexPath.row];
-    [self.delegate setSelectRoute:route];
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didSelectRout:)])
+    {
+        [self.delegate didSelectRout:route];
+    }
+    
     [self.sidePanelController showCenterPanelAnimated:YES];
+}
+
+- (void) favoritesChenget
+{
+    [self.tableView reloadData];
 }
 
 @end
